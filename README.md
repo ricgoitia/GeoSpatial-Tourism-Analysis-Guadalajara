@@ -75,6 +75,4 @@ To view the map:
 
 Luis Ricardo Rivera Goitia
 
-Tecnológico de Monterrey
 
-2026
