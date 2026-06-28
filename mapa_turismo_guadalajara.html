@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_009a2551357c52d63e0d5e03c1e238f5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_009a2551357c52d63e0d5e03c1e238f5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_009a2551357c52d63e0d5e03c1e238f5 = L.map(
+                "map_009a2551357c52d63e0d5e03c1e238f5",
+                {
+                    center: [20.67, -103.35],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_27e55e139b88a29ae22d0e7af1424cb7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_27e55e139b88a29ae22d0e7af1424cb7.addTo(map_009a2551357c52d63e0d5e03c1e238f5);
+        
+    
+            var marker_cluster_1e8af8b390f46de40fc6574a7ba53303 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_4e0661d21400e00c3d61c02dbe37c537 = L.circleMarker(
+                [20.66370861069626, -103.38779617651552],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.68, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_9b0b8e5bcb3a4ac4ad5cd4d846cce37f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_307f62d7b1ece1485adc94b0823cef45 = $(`<div id="html_307f62d7b1ece1485adc94b0823cef45" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 1</b><br>     Tipo: Restaurante<br>     Visitantes: 184<br>     Calificación: 3.91     </div>`)[0];
+                popup_9b0b8e5bcb3a4ac4ad5cd4d846cce37f.setContent(html_307f62d7b1ece1485adc94b0823cef45);
+            
+        
+
+        circle_marker_4e0661d21400e00c3d61c02dbe37c537.bindPopup(popup_9b0b8e5bcb3a4ac4ad5cd4d846cce37f)
+        ;
+
+        
+    
+    
+            var circle_marker_ea15315b3be75a875135b64fbc993617 = L.circleMarker(
+                [20.715564287576893, -103.35048230898887],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_9369e3a973e0aae4a450b3b941b3765d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8ef4865fe9c73ecc5b7345b236255f13 = $(`<div id="html_8ef4865fe9c73ecc5b7345b236255f13" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 2</b><br>     Tipo: Museo<br>     Visitantes: 250<br>     Calificación: 4.24     </div>`)[0];
+                popup_9369e3a973e0aae4a450b3b941b3765d.setContent(html_8ef4865fe9c73ecc5b7345b236255f13);
+            
+        
+
+        circle_marker_ea15315b3be75a875135b64fbc993617.bindPopup(popup_9369e3a973e0aae4a450b3b941b3765d)
+        ;
+
+        
+    
+    
+            var circle_marker_707772ab4edceacbefeed76327fc923f = L.circleMarker(
+                [20.695879454763027, -103.39656114788848],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.54, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_4c5a111b670992c76a6e6f56704bac77 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_00671244c08e4da22325f9ac1af29cfd = $(`<div id="html_00671244c08e4da22325f9ac1af29cfd" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 3</b><br>     Tipo: Centro cultural<br>     Visitantes: 377<br>     Calificación: 2.85     </div>`)[0];
+                popup_4c5a111b670992c76a6e6f56704bac77.setContent(html_00671244c08e4da22325f9ac1af29cfd);
+            
+        
+
+        circle_marker_707772ab4edceacbefeed76327fc923f.bindPopup(popup_4c5a111b670992c76a6e6f56704bac77)
+        ;
+
+        
+    
+    
+            var circle_marker_4eb5a7886119f152a6574483a2924158 = L.circleMarker(
+                [20.683879263577733, -103.30906795979212],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.34, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_dc70a072dbd4fde6b2d6882b3d4262e4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_84960147d75d34bad709e12976b992d9 = $(`<div id="html_84960147d75d34bad709e12976b992d9" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 4</b><br>     Tipo: Museo<br>     Visitantes: 317<br>     Calificación: 4.01     </div>`)[0];
+                popup_dc70a072dbd4fde6b2d6882b3d4262e4.setContent(html_84960147d75d34bad709e12976b992d9);
+            
+        
+
+        circle_marker_4eb5a7886119f152a6574483a2924158.bindPopup(popup_dc70a072dbd4fde6b2d6882b3d4262e4)
+        ;
+
+        
+    
+    
+            var circle_marker_e84950d2972f89a07f5168b09578fef2 = L.circleMarker(
+                [20.64404167763982, -103.37412200184],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.34, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_c48ff89cc5a47da3cb0c26c85a632471 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_51a5c2605321b75ef4ba3f1e7e57ce11 = $(`<div id="html_51a5c2605321b75ef4ba3f1e7e57ce11" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 5</b><br>     Tipo: Museo<br>     Visitantes: 467<br>     Calificación: 3.85     </div>`)[0];
+                popup_c48ff89cc5a47da3cb0c26c85a632471.setContent(html_51a5c2605321b75ef4ba3f1e7e57ce11);
+            
+        
+
+        circle_marker_e84950d2972f89a07f5168b09578fef2.bindPopup(popup_c48ff89cc5a47da3cb0c26c85a632471)
+        ;
+
+        
+    
+    
+            var circle_marker_fdb40cf94506a064f3793efe002fd28e = L.circleMarker(
+                [20.644039506830257, -103.3337477715646],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.64, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_17cae07c6dd7885b87d50de2a7ef2a63 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fdd8f4df1e0d010aae810985075710fc = $(`<div id="html_fdd8f4df1e0d010aae810985075710fc" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 6</b><br>     Tipo: Restaurante<br>     Visitantes: 82<br>     Calificación: 3.01     </div>`)[0];
+                popup_17cae07c6dd7885b87d50de2a7ef2a63.setContent(html_fdd8f4df1e0d010aae810985075710fc);
+            
+        
+
+        circle_marker_fdb40cf94506a064f3793efe002fd28e.bindPopup(popup_17cae07c6dd7885b87d50de2a7ef2a63)
+        ;
+
+        
+    
+    
+            var circle_marker_e23ea409a98c7cb9d5f141c4b41f5d48 = L.circleMarker(
+                [20.635227525095136, -103.36882889239106],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.94, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_b4604ecb84564adcaed46b261d7d99a2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8adc9f1a70d151ecc30960aa5e93d665 = $(`<div id="html_8adc9f1a70d151ecc30960aa5e93d665" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 7</b><br>     Tipo: Museo<br>     Visitantes: 97<br>     Calificación: 4.86     </div>`)[0];
+                popup_b4604ecb84564adcaed46b261d7d99a2.setContent(html_8adc9f1a70d151ecc30960aa5e93d665);
+            
+        
+
+        circle_marker_e23ea409a98c7cb9d5f141c4b41f5d48.bindPopup(popup_b4604ecb84564adcaed46b261d7d99a2)
+        ;
+
+        
+    
+    
+            var circle_marker_969d8ca6bbfe60d9374238aa240ef1ce = L.circleMarker(
+                [20.707955853119742, -103.34799319788222],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.12, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_d556283acddde488bb3471927db36c1a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_70f804247f3d007b7a92a8086c875e3e = $(`<div id="html_70f804247f3d007b7a92a8086c875e3e" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 8</b><br>     Tipo: Parque<br>     Visitantes: 456<br>     Calificación: 4.0     </div>`)[0];
+                popup_d556283acddde488bb3471927db36c1a.setContent(html_70f804247f3d007b7a92a8086c875e3e);
+            
+        
+
+        circle_marker_969d8ca6bbfe60d9374238aa240ef1ce.bindPopup(popup_d556283acddde488bb3471927db36c1a)
+        ;
+
+        
+    
+    
+            var circle_marker_c1072ad2cd35627d13174046573583bf = L.circleMarker(
+                [20.684100351056887, -103.34532897206567],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.22, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_a1ac93bf2b9af84f76629eb29b4dc620 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_aedbacbc2c2bc9b82dac82725c81dac3 = $(`<div id="html_aedbacbc2c2bc9b82dac82725c81dac3" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 9</b><br>     Tipo: Parque<br>     Visitantes: 111<br>     Calificación: 4.24     </div>`)[0];
+                popup_a1ac93bf2b9af84f76629eb29b4dc620.setContent(html_aedbacbc2c2bc9b82dac82725c81dac3);
+            
+        
+
+        circle_marker_c1072ad2cd35627d13174046573583bf.bindPopup(popup_a1ac93bf2b9af84f76629eb29b4dc620)
+        ;
+
+        
+    
+    
+            var circle_marker_bd6f6156f933096bd1998c90f3872762 = L.circleMarker(
+                [20.693726532001644, -103.38151455444745],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.3, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_9a726e478cb63a97b1a99f75cffe731f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e95552071371ab7e9345560d5e76449f = $(`<div id="html_e95552071371ab7e9345560d5e76449f" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 10</b><br>     Tipo: Monumento<br>     Visitantes: 265<br>     Calificación: 4.7     </div>`)[0];
+                popup_9a726e478cb63a97b1a99f75cffe731f.setContent(html_e95552071371ab7e9345560d5e76449f);
+            
+        
+
+        circle_marker_bd6f6156f933096bd1998c90f3872762.bindPopup(popup_9a726e478cb63a97b1a99f75cffe731f)
+        ;
+
+        
+    
+    
+            var circle_marker_4448558b0faf911de07f3a821b1c0f3a = L.circleMarker(
+                [20.63185260448662, -103.30304153722354],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.84, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_9ec5b78b0ea700b96609050f8dc79802 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_943b41d32c08c5ed4ec429cf2720bb2b = $(`<div id="html_943b41d32c08c5ed4ec429cf2720bb2b" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 11</b><br>     Tipo: Centro cultural<br>     Visitantes: 342<br>     Calificación: 4.06     </div>`)[0];
+                popup_9ec5b78b0ea700b96609050f8dc79802.setContent(html_943b41d32c08c5ed4ec429cf2720bb2b);
+            
+        
+
+        circle_marker_4448558b0faf911de07f3a821b1c0f3a.bindPopup(popup_9ec5b78b0ea700b96609050f8dc79802)
+        ;
+
+        
+    
+    
+            var circle_marker_11941c0282050041a16fb1907c59d589 = L.circleMarker(
+                [20.71729188669458, -103.32248671766389],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.96, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_b0d827e60beb2301524eb992cd05691d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_df5ef03f3501fa7a5d639029adad6ded = $(`<div id="html_df5ef03f3501fa7a5d639029adad6ded" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 12</b><br>     Tipo: Museo<br>     Visitantes: 148<br>     Calificación: 3.24     </div>`)[0];
+                popup_b0d827e60beb2301524eb992cd05691d.setContent(html_df5ef03f3501fa7a5d639029adad6ded);
+            
+        
+
+        circle_marker_11941c0282050041a16fb1907c59d589.bindPopup(popup_b0d827e60beb2301524eb992cd05691d)
+        ;
+
+        
+    
+    
+            var circle_marker_abc673488408e762a167e86bac5967b5 = L.circleMarker(
+                [20.704919837672037, -103.30605010584358],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.42, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_c7a2a0a57f8970c8f9338b95fef03598 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5e53ee2b350c424a216b144dbfafe15e = $(`<div id="html_5e53ee2b350c424a216b144dbfafe15e" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 13</b><br>     Tipo: Museo<br>     Visitantes: 221<br>     Calificación: 2.76     </div>`)[0];
+                popup_c7a2a0a57f8970c8f9338b95fef03598.setContent(html_5e53ee2b350c424a216b144dbfafe15e);
+            
+        
+
+        circle_marker_abc673488408e762a167e86bac5967b5.bindPopup(popup_c7a2a0a57f8970c8f9338b95fef03598)
+        ;
+
+        
+    
+    
+            var circle_marker_4451ef261a3c5ffae50ad878698142a1 = L.circleMarker(
+                [20.649110519961045, -103.31051726495723],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.18, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_88f514dc826d84a3da64dbeef4d242cd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a88743b7bea88ccc6d1de3fd9fefbf02 = $(`<div id="html_a88743b7bea88ccc6d1de3fd9fefbf02" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 14</b><br>     Tipo: Restaurante<br>     Visitantes: 409<br>     Calificación: 3.64     </div>`)[0];
+                popup_88f514dc826d84a3da64dbeef4d242cd.setContent(html_a88743b7bea88ccc6d1de3fd9fefbf02);
+            
+        
+
+        circle_marker_4451ef261a3c5ffae50ad878698142a1.bindPopup(popup_88f514dc826d84a3da64dbeef4d242cd)
+        ;
+
+        
+    
+    
+            var circle_marker_b75ac0b8b488e85527ceca214d2ee99d = L.circleMarker(
+                [20.646364247048638, -103.3402100021189],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.26, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_60f01d62682f22306a12942847d3fec4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_68503dbd75b1645d9fc686bc39d74edc = $(`<div id="html_68503dbd75b1645d9fc686bc39d74edc" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 15</b><br>     Tipo: Parque<br>     Visitantes: 263<br>     Calificación: 3.05     </div>`)[0];
+                popup_60f01d62682f22306a12942847d3fec4.setContent(html_68503dbd75b1645d9fc686bc39d74edc);
+            
+        
+
+        circle_marker_b75ac0b8b488e85527ceca214d2ee99d.bindPopup(popup_60f01d62682f22306a12942847d3fec4)
+        ;
+
+        
+    
+    
+            var circle_marker_901828a0e874c86a9c030bfc7a6c3335 = L.circleMarker(
+                [20.646506405886807, -103.30781257649768],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.68, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_6a3be0e7edc468196034f58de17315a5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_31af5b47af3e844baa65266e32efdfe0 = $(`<div id="html_31af5b47af3e844baa65266e32efdfe0" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 16</b><br>     Tipo: Centro cultural<br>     Visitantes: 84<br>     Calificación: 3.54     </div>`)[0];
+                popup_6a3be0e7edc468196034f58de17315a5.setContent(html_31af5b47af3e844baa65266e32efdfe0);
+            
+        
+
+        circle_marker_901828a0e874c86a9c030bfc7a6c3335.bindPopup(popup_6a3be0e7edc468196034f58de17315a5)
+        ;
+
+        
+    
+    
+            var circle_marker_533269f4ec1ef5bcdea742ffbcb86ff6 = L.circleMarker(
+                [20.657381801866357, -103.39115074979482],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.96, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_624f3afc2dc5d64b59c2d84c27c462a2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e4c99073878082acb2d591004c4908c3 = $(`<div id="html_e4c99073878082acb2d591004c4908c3" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 17</b><br>     Tipo: Monumento<br>     Visitantes: 498<br>     Calificación: 4.71     </div>`)[0];
+                popup_624f3afc2dc5d64b59c2d84c27c462a2.setContent(html_e4c99073878082acb2d591004c4908c3);
+            
+        
+
+        circle_marker_533269f4ec1ef5bcdea742ffbcb86ff6.bindPopup(popup_624f3afc2dc5d64b59c2d84c27c462a2)
+        ;
+
+        
+    
+    
+            var circle_marker_162d6bb4edf9502262357afdb783fe69 = L.circleMarker(
+                [20.677228078846902, -103.38040171375809],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.52, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_072af16c2d8e83739de453dffe88f29e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a2e244fece8c1900cfed062e87e29186 = $(`<div id="html_a2e244fece8c1900cfed062e87e29186" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 18</b><br>     Tipo: Parque<br>     Visitantes: 276<br>     Calificación: 3.31     </div>`)[0];
+                popup_072af16c2d8e83739de453dffe88f29e.setContent(html_a2e244fece8c1900cfed062e87e29186);
+            
+        
+
+        circle_marker_162d6bb4edf9502262357afdb783fe69.bindPopup(popup_072af16c2d8e83739de453dffe88f29e)
+        ;
+
+        
+    
+    
+            var circle_marker_63c56ca17408b9554e7e2485dac97796 = L.circleMarker(
+                [20.66887505167779, -103.39547727110894],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_6e15b2c868bf3511a6426018afd7b29a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c943c59e901e91892482657d2c642b84 = $(`<div id="html_c943c59e901e91892482657d2c642b84" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 19</b><br>     Tipo: Monumento<br>     Visitantes: 150<br>     Calificación: 2.81     </div>`)[0];
+                popup_6e15b2c868bf3511a6426018afd7b29a.setContent(html_c943c59e901e91892482657d2c642b84);
+            
+        
+
+        circle_marker_63c56ca17408b9554e7e2485dac97796.bindPopup(popup_6e15b2c868bf3511a6426018afd7b29a)
+        ;
+
+        
+    
+    
+            var circle_marker_199cc18cbea512d1364858baf045e1b9 = L.circleMarker(
+                [20.656210622617824, -103.36746696692367],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_e9b846ff2206b687b92df1fee48377a7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c96b7875e5cf30e633f72aba6204f356 = $(`<div id="html_c96b7875e5cf30e633f72aba6204f356" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 20</b><br>     Tipo: Restaurante<br>     Visitantes: 480<br>     Calificación: 3.39     </div>`)[0];
+                popup_e9b846ff2206b687b92df1fee48377a7.setContent(html_c96b7875e5cf30e633f72aba6204f356);
+            
+        
+
+        circle_marker_199cc18cbea512d1364858baf045e1b9.bindPopup(popup_e9b846ff2206b687b92df1fee48377a7)
+        ;
+
+        
+    
+    
+            var circle_marker_14df778f5bec2ad29bf3e56142b12b4e = L.circleMarker(
+                [20.685066760525014, -103.36113227103105],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_66c591c9c2936314eb792d63300900b1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c2dd024e176e315b6f0a21e83fc31023 = $(`<div id="html_c2dd024e176e315b6f0a21e83fc31023" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 21</b><br>     Tipo: Restaurante<br>     Visitantes: 180<br>     Calificación: 4.77     </div>`)[0];
+                popup_66c591c9c2936314eb792d63300900b1.setContent(html_c2dd024e176e315b6f0a21e83fc31023);
+            
+        
+
+        circle_marker_14df778f5bec2ad29bf3e56142b12b4e.bindPopup(popup_66c591c9c2936314eb792d63300900b1)
+        ;
+
+        
+    
+    
+            var circle_marker_59fe26fc39ea5c24aa45be94d60c947c = L.circleMarker(
+                [20.642554447458682, -103.37286509682261],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.12, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_b5fea3372e82f601661766ccdcc377a5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5fd62e9a94d7d997b375c2b40fbd4ebb = $(`<div id="html_5fd62e9a94d7d997b375c2b40fbd4ebb" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 22</b><br>     Tipo: Museo<br>     Visitantes: 306<br>     Calificación: 3.18     </div>`)[0];
+                popup_b5fea3372e82f601661766ccdcc377a5.setContent(html_5fd62e9a94d7d997b375c2b40fbd4ebb);
+            
+        
+
+        circle_marker_59fe26fc39ea5c24aa45be94d60c947c.bindPopup(popup_b5fea3372e82f601661766ccdcc377a5)
+        ;
+
+        
+    
+    
+            var circle_marker_3345c8f14affbb598bdf147f6622b23b = L.circleMarker(
+                [20.656293018368167, -103.31712624908481],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.08, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_af07890e0fa82a9b376640f52785fb04 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ee09839f408b2398cce9ef3d5d79aa79 = $(`<div id="html_ee09839f408b2398cce9ef3d5d79aa79" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 23</b><br>     Tipo: Centro cultural<br>     Visitantes: 54<br>     Calificación: 4.12     </div>`)[0];
+                popup_af07890e0fa82a9b376640f52785fb04.setContent(html_ee09839f408b2398cce9ef3d5d79aa79);
+            
+        
+
+        circle_marker_3345c8f14affbb598bdf147f6622b23b.bindPopup(popup_af07890e0fa82a9b376640f52785fb04)
+        ;
+
+        
+    
+    
+            var circle_marker_82b9d5d5b1b60b83fb9a0929f3275803 = L.circleMarker(
+                [20.662972565896432, -103.36432466733065],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.34, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_e3fb9bf4838c11b0d4d613e1c24bee22 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3a43de7b7e61d7fb0e209f8cf1a54d8e = $(`<div id="html_3a43de7b7e61d7fb0e209f8cf1a54d8e" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 24</b><br>     Tipo: Monumento<br>     Visitantes: 267<br>     Calificación: 2.5     </div>`)[0];
+                popup_e3fb9bf4838c11b0d4d613e1c24bee22.setContent(html_3a43de7b7e61d7fb0e209f8cf1a54d8e);
+            
+        
+
+        circle_marker_82b9d5d5b1b60b83fb9a0929f3275803.bindPopup(popup_e3fb9bf4838c11b0d4d613e1c24bee22)
+        ;
+
+        
+    
+    
+            var circle_marker_ba6523d10582860336ceccf10b53b2e7 = L.circleMarker(
+                [20.671046298579533, -103.37190654903127],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.08, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_394fe624be120e474d9efd1f4149e1e3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_29eb910529d9924dec09426506ff287f = $(`<div id="html_29eb910529d9924dec09426506ff287f" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 25</b><br>     Tipo: Parque<br>     Visitantes: 304<br>     Calificación: 3.38     </div>`)[0];
+                popup_394fe624be120e474d9efd1f4149e1e3.setContent(html_29eb910529d9924dec09426506ff287f);
+            
+        
+
+        circle_marker_ba6523d10582860336ceccf10b53b2e7.bindPopup(popup_394fe624be120e474d9efd1f4149e1e3)
+        ;
+
+        
+    
+    
+            var circle_marker_75686a5b8dfa8f901186fe92eaf64ccc = L.circleMarker(
+                [20.70066583652537, -103.34573039168417],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.94, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_13f1e7218e6d4153017ae6d3a7feb3a7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_30d9ebefea1df0593bdd86d46db44c49 = $(`<div id="html_30d9ebefea1df0593bdd86d46db44c49" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 26</b><br>     Tipo: Restaurante<br>     Visitantes: 447<br>     Calificación: 3.26     </div>`)[0];
+                popup_13f1e7218e6d4153017ae6d3a7feb3a7.setContent(html_30d9ebefea1df0593bdd86d46db44c49);
+            
+        
+
+        circle_marker_75686a5b8dfa8f901186fe92eaf64ccc.bindPopup(popup_13f1e7218e6d4153017ae6d3a7feb3a7)
+        ;
+
+        
+    
+    
+            var circle_marker_ad6c2b25d0effd73880ba4e3244ff951 = L.circleMarker(
+                [20.647970640394252, -103.38590757750252],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.16, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_846d32cb345af59e1240de8d60b254df = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9ea7b1de97be3dc75f5cc272610041d8 = $(`<div id="html_9ea7b1de97be3dc75f5cc272610041d8" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 27</b><br>     Tipo: Museo<br>     Visitantes: 408<br>     Calificación: 2.91     </div>`)[0];
+                popup_846d32cb345af59e1240de8d60b254df.setContent(html_9ea7b1de97be3dc75f5cc272610041d8);
+            
+        
+
+        circle_marker_ad6c2b25d0effd73880ba4e3244ff951.bindPopup(popup_846d32cb345af59e1240de8d60b254df)
+        ;
+
+        
+    
+    
+            var circle_marker_4224ec43d1c5108d5b5d1400c46d7234 = L.circleMarker(
+                [20.676281099457224, -103.3197803019246],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.64, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_ae32ca2481fde74d5a485d6bcba7ae42 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_83ad21c46b79456e35008957a6d0498d = $(`<div id="html_83ad21c46b79456e35008957a6d0498d" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 28</b><br>     Tipo: Museo<br>     Visitantes: 332<br>     Calificación: 3.84     </div>`)[0];
+                popup_ae32ca2481fde74d5a485d6bcba7ae42.setContent(html_83ad21c46b79456e35008957a6d0498d);
+            
+        
+
+        circle_marker_4224ec43d1c5108d5b5d1400c46d7234.bindPopup(popup_ae32ca2481fde74d5a485d6bcba7ae42)
+        ;
+
+        
+    
+    
+            var circle_marker_df7afa130f6aac9015a060ac11066615 = L.circleMarker(
+                [20.683317311197584, -103.39254493563203],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.84, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_970dab184cced9f5cd4d0adab64d062e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c1bd2b0dbbab685826f91607aec2c3c0 = $(`<div id="html_c1bd2b0dbbab685826f91607aec2c3c0" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 29</b><br>     Tipo: Monumento<br>     Visitantes: 442<br>     Calificación: 3.71     </div>`)[0];
+                popup_970dab184cced9f5cd4d0adab64d062e.setContent(html_c1bd2b0dbbab685826f91607aec2c3c0);
+            
+        
+
+        circle_marker_df7afa130f6aac9015a060ac11066615.bindPopup(popup_970dab184cced9f5cd4d0adab64d062e)
+        ;
+
+        
+    
+    
+            var circle_marker_f752d364279703a8dc27e5e7dcd42d8a = L.circleMarker(
+                [20.6341805371448, -103.30131130633994],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.12, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_2595adfb63b30527334ae9f6fc05f727 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_34d0db613da12bdfc8f7324ce5627b21 = $(`<div id="html_34d0db613da12bdfc8f7324ce5627b21" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 30</b><br>     Tipo: Restaurante<br>     Visitantes: 256<br>     Calificación: 4.23     </div>`)[0];
+                popup_2595adfb63b30527334ae9f6fc05f727.setContent(html_34d0db613da12bdfc8f7324ce5627b21);
+            
+        
+
+        circle_marker_f752d364279703a8dc27e5e7dcd42d8a.bindPopup(popup_2595adfb63b30527334ae9f6fc05f727)
+        ;
+
+        
+    
+    
+            var circle_marker_2b969c9a5239e8c0ffc0283918c591b2 = L.circleMarker(
+                [20.684679036671128, -103.32277552307033],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.28, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_187f6a6c16cc93bc86e8bb488ac4a94c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a89cb63a87f652999f08735898111f97 = $(`<div id="html_a89cb63a87f652999f08735898111f97" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 31</b><br>     Tipo: Centro cultural<br>     Visitantes: 64<br>     Calificación: 3.17     </div>`)[0];
+                popup_187f6a6c16cc93bc86e8bb488ac4a94c.setContent(html_a89cb63a87f652999f08735898111f97);
+            
+        
+
+        circle_marker_2b969c9a5239e8c0ffc0283918c591b2.bindPopup(popup_187f6a6c16cc93bc86e8bb488ac4a94c)
+        ;
+
+        
+    
+    
+            var circle_marker_dbeb9110d69320fee204c5b30ebd81c0 = L.circleMarker(
+                [20.645347171131856, -103.38012843184659],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_22abba499a6e013ccb759d35cb6ede92 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1989b3a07b310e42e73666d34b16cdb5 = $(`<div id="html_1989b3a07b310e42e73666d34b16cdb5" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 32</b><br>     Tipo: Restaurante<br>     Visitantes: 395<br>     Calificación: 3.11     </div>`)[0];
+                popup_22abba499a6e013ccb759d35cb6ede92.setContent(html_1989b3a07b310e42e73666d34b16cdb5);
+            
+        
+
+        circle_marker_dbeb9110d69320fee204c5b30ebd81c0.bindPopup(popup_22abba499a6e013ccb759d35cb6ede92)
+        ;
+
+        
+    
+    
+            var circle_marker_66694a0d3ca78b31d1a50a98f720c84d = L.circleMarker(
+                [20.635854643368674, -103.39944778828765],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.82, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_e59ea57a6879e657d9a297ae06b2978c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c62be3cf1b5a2bf057a1e67964c93acc = $(`<div id="html_c62be3cf1b5a2bf057a1e67964c93acc" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 33</b><br>     Tipo: Monumento<br>     Visitantes: 91<br>     Calificación: 2.92     </div>`)[0];
+                popup_e59ea57a6879e657d9a297ae06b2978c.setContent(html_c62be3cf1b5a2bf057a1e67964c93acc);
+            
+        
+
+        circle_marker_66694a0d3ca78b31d1a50a98f720c84d.bindPopup(popup_e59ea57a6879e657d9a297ae06b2978c)
+        ;
+
+        
+    
+    
+            var circle_marker_f9d6a8a76da30acdb13e02f3fdea8a65 = L.circleMarker(
+                [20.715399698352797, -103.31845385715451],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.58, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_e517b8c957786804b8bca016e1ecad74 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3ec04dc392d6136829334594fcf37b0e = $(`<div id="html_3ec04dc392d6136829334594fcf37b0e" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 34</b><br>     Tipo: Monumento<br>     Visitantes: 429<br>     Calificación: 3.05     </div>`)[0];
+                popup_e517b8c957786804b8bca016e1ecad74.setContent(html_3ec04dc392d6136829334594fcf37b0e);
+            
+        
+
+        circle_marker_f9d6a8a76da30acdb13e02f3fdea8a65.bindPopup(popup_e517b8c957786804b8bca016e1ecad74)
+        ;
+
+        
+    
+    
+            var circle_marker_ca9692165ff36cab9c6d39c683a45cff = L.circleMarker(
+                [20.71690688297671, -103.32931426561524],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.56, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_1eceb17c68ad7faf27a73619315b582d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f2882a54b4cbc6e9af209959d16a4267 = $(`<div id="html_f2882a54b4cbc6e9af209959d16a4267" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 35</b><br>     Tipo: Restaurante<br>     Visitantes: 228<br>     Calificación: 3.9     </div>`)[0];
+                popup_1eceb17c68ad7faf27a73619315b582d.setContent(html_f2882a54b4cbc6e9af209959d16a4267);
+            
+        
+
+        circle_marker_ca9692165ff36cab9c6d39c683a45cff.bindPopup(popup_1eceb17c68ad7faf27a73619315b582d)
+        ;
+
+        
+    
+    
+            var circle_marker_a6e0e7aa0b9538ad96777231778472e5 = L.circleMarker(
+                [20.70275576133048, -103.3270992831959],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.24, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_bc176009964b7680d2305c7fd8810aee = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b0f36d8f70d7637b7a98ea02b487b237 = $(`<div id="html_b0f36d8f70d7637b7a98ea02b487b237" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 36</b><br>     Tipo: Monumento<br>     Visitantes: 112<br>     Calificación: 3.51     </div>`)[0];
+                popup_bc176009964b7680d2305c7fd8810aee.setContent(html_b0f36d8f70d7637b7a98ea02b487b237);
+            
+        
+
+        circle_marker_a6e0e7aa0b9538ad96777231778472e5.bindPopup(popup_bc176009964b7680d2305c7fd8810aee)
+        ;
+
+        
+    
+    
+            var circle_marker_cdc98a360bc7387a01b6b66a37f2b87c = L.circleMarker(
+                [20.657415239225603, -103.3228729653314],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.02, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_4970f5c23ab83e054825cf2782d8b66b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c72ff866a8156b8efb45f15d206e8656 = $(`<div id="html_c72ff866a8156b8efb45f15d206e8656" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 37</b><br>     Tipo: Restaurante<br>     Visitantes: 401<br>     Calificación: 2.66     </div>`)[0];
+                popup_4970f5c23ab83e054825cf2782d8b66b.setContent(html_c72ff866a8156b8efb45f15d206e8656);
+            
+        
+
+        circle_marker_cdc98a360bc7387a01b6b66a37f2b87c.bindPopup(popup_4970f5c23ab83e054825cf2782d8b66b)
+        ;
+
+        
+    
+    
+            var circle_marker_8e27b2ce34f84a36a51614213fcf5fba = L.circleMarker(
+                [20.638790490260572, -103.3925955348266],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_26c9cf116c0793e446166968750daf72 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e9b783a3a9929cba22ef72542e5798a6 = $(`<div id="html_e9b783a3a9929cba22ef72542e5798a6" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 38</b><br>     Tipo: Parque<br>     Visitantes: 280<br>     Calificación: 3.13     </div>`)[0];
+                popup_26c9cf116c0793e446166968750daf72.setContent(html_e9b783a3a9929cba22ef72542e5798a6);
+            
+        
+
+        circle_marker_8e27b2ce34f84a36a51614213fcf5fba.bindPopup(popup_26c9cf116c0793e446166968750daf72)
+        ;
+
+        
+    
+    
+            var circle_marker_bfb3d103e838733b9fd94963605cdd77 = L.circleMarker(
+                [20.69158097238609, -103.36415342714558],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_8465462b6905a97f616b82c45d46c1a7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7502327762972eca0a407b42ad9eba19 = $(`<div id="html_7502327762972eca0a407b42ad9eba19" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 39</b><br>     Tipo: Restaurante<br>     Visitantes: 290<br>     Calificación: 3.12     </div>`)[0];
+                popup_8465462b6905a97f616b82c45d46c1a7.setContent(html_7502327762972eca0a407b42ad9eba19);
+            
+        
+
+        circle_marker_bfb3d103e838733b9fd94963605cdd77.bindPopup(popup_8465462b6905a97f616b82c45d46c1a7)
+        ;
+
+        
+    
+    
+            var circle_marker_876cecde87668e52d120ba6ba55f24e1 = L.circleMarker(
+                [20.669613724436562, -103.3884130940475],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.02, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_1e8af8b390f46de40fc6574a7ba53303);
+        
+    
+        var popup_ee275ce567e2eba8ff5546c2b74f94d4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ed11cf771aea20ad514eed7417e40470 = $(`<div id="html_ed11cf771aea20ad514eed7417e40470" style="width: 100.0%; height: 100.0%;">     <b>Punto turístico 40</b><br>     Tipo: Restaurante<br>     Visitantes: 101<br>     Calificación: 4.24     </div>`)[0];
+                popup_ee275ce567e2eba8ff5546c2b74f94d4.setContent(html_ed11cf771aea20ad514eed7417e40470);
+            
+        
+
+        circle_marker_876cecde87668e52d120ba6ba55f24e1.bindPopup(popup_ee275ce567e2eba8ff5546c2b74f94d4)
+        ;
+
+        
+    
+    
+            marker_cluster_1e8af8b390f46de40fc6574a7ba53303.addTo(map_009a2551357c52d63e0d5e03c1e238f5);
+        
+    
+            var heat_map_699be1b5680daa456a1db69f4e1a7855 = L.heatLayer(
+                [[20.66370861069626, -103.38779617651552, 184.0], [20.715564287576893, -103.35048230898887, 250.0], [20.695879454763027, -103.39656114788848, 377.0], [20.683879263577733, -103.30906795979212, 317.0], [20.64404167763982, -103.37412200184, 467.0], [20.644039506830257, -103.3337477715646, 82.0], [20.635227525095136, -103.36882889239106, 97.0], [20.707955853119742, -103.34799319788222, 456.0], [20.684100351056887, -103.34532897206567, 111.0], [20.693726532001644, -103.38151455444745, 265.0], [20.63185260448662, -103.30304153722354, 342.0], [20.71729188669458, -103.32248671766389, 148.0], [20.704919837672037, -103.30605010584358, 221.0], [20.649110519961045, -103.31051726495723, 409.0], [20.646364247048638, -103.3402100021189, 263.0], [20.646506405886807, -103.30781257649768, 84.0], [20.657381801866357, -103.39115074979482, 498.0], [20.677228078846902, -103.38040171375809, 276.0], [20.66887505167779, -103.39547727110894, 150.0], [20.656210622617824, -103.36746696692367, 480.0], [20.685066760525014, -103.36113227103105, 180.0], [20.642554447458682, -103.37286509682261, 306.0], [20.656293018368167, -103.31712624908481, 54.0], [20.662972565896432, -103.36432466733065, 267.0], [20.671046298579533, -103.37190654903127, 304.0], [20.70066583652537, -103.34573039168417, 447.0], [20.647970640394252, -103.38590757750252, 408.0], [20.676281099457224, -103.3197803019246, 332.0], [20.683317311197584, -103.39254493563203, 442.0], [20.6341805371448, -103.30131130633994, 256.0], [20.684679036671128, -103.32277552307033, 64.0], [20.645347171131856, -103.38012843184659, 395.0], [20.635854643368674, -103.39944778828765, 91.0], [20.715399698352797, -103.31845385715451, 429.0], [20.71690688297671, -103.32931426561524, 228.0], [20.70275576133048, -103.3270992831959, 112.0], [20.657415239225603, -103.3228729653314, 401.0], [20.638790490260572, -103.3925955348266, 280.0], [20.69158097238609, -103.36415342714558, 290.0], [20.669613724436562, -103.3884130940475, 101.0]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 20,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_699be1b5680daa456a1db69f4e1a7855.addTo(map_009a2551357c52d63e0d5e03c1e238f5);
+        
+</script>
+</html>
