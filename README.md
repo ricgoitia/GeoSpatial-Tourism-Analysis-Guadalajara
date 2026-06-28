@@ -2,9 +2,11 @@
 
 ## Description
 
-This project demonstrates a geospatial analysis of tourist attractions in Guadalajara, Jalisco, Mexico using Python.
+This project presents a geospatial analysis of tourist attractions in Guadalajara, Jalisco, Mexico using Python and interactive mapping tools.
 
-The project uses:
+The objective is to visualize the spatial distribution of tourist attractions, visitor concentration, and satisfaction ratings through an interactive map.
+
+## Technologies Used
 
 - Pandas
 - NumPy
@@ -12,16 +14,16 @@ The project uses:
 - MarkerCluster
 - HeatMap
 
-to create an interactive map that visualizes:
-
-- Tourist attraction locations
-- Estimated visitors
-- Visitor satisfaction ratings
-- Heat map of tourist concentration
+```python
+import folium
+import pandas as pd
+import numpy as np
+from folium.plugins import MarkerCluster, HeatMap
+```
 
 ## Dataset
 
-The dataset contains simulated tourism data for locations in Guadalajara.
+The dataset contains simulated tourism information for attractions located in Guadalajara, Jalisco.
 
 Each record includes:
 
@@ -30,12 +32,49 @@ Each record includes:
 - Longitude
 - Number of visitors
 - Satisfaction rating
-- Type of attraction
+- Attraction type
 
-## Technologies
+## Analysis Performed
 
-```python
-import folium
-import pandas as pd
-import numpy as np
-from folium.plugins import MarkerCluster, HeatMap
+The project includes:
+
+- Interactive geolocation mapping
+- Marker clustering
+- Heat map visualization
+- Tourist attraction categorization
+- Visitor concentration analysis
+
+## Interactive Map
+
+The interactive map generated with Folium is available in:
+
+- `mapa_turismo_guadalajara.html`
+
+To view the map:
+
+1. Download the file.
+2. Open it in any web browser.
+
+## Map Preview
+
+![Tourism Map](images/mapa.png)
+
+## Repository Contents
+
+```text
+.
+├── tourism_analysis.py
+├── mapa_turismo_guadalajara.html
+├── requirements.txt
+├── README.md
+└── images/
+    └── mapa.png
+```
+
+## Author
+
+Luis Ricardo Rivera Goitia
+
+Tecnológico de Monterrey
+
+2026
